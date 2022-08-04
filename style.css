@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
+
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 1rem;
+  align-items: center;
+}
+nav h1 {
+  font-family: "Megrim", cursive;
+  font-size: 2rem;
+  color: #0a66c2;
+}
+nav a {
+  text-decoration: none;
+  color: #666666;
+  font-size: larger;
+  font-weight: bold;
+  margin-left: 2rem;
+}
+nav a:hover {
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  margin-bottom: 3rem;
+}
+.title {
+  font-family: "Segoe UI";
+  color: #a67b6f;
+}
+.container input {
+  width: 300px;
+  height: 1.5rem;
+  margin: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid #a67b6f;
+  border-radius: 0.3rem;
+}
+.btn {
+  background-color: #a67b6f;
+  border: none;
+  margin: 1rem auto;
+
+  width: 150px;
+  height: 2rem;
+  color: white;
+  font-size: large;
+  border-radius: 0.5rem;
+}
+.btn:hover {
+  background-color: #92665b;
+}
+footer {
+  text-align: center;
+}
+
+footer p {
+  font-size: large;
+  text-align: center;
+}
+
+.footer-list {
+  margin: 1rem;
+}
+a,
+img,
+li {
+  display: inline;
+}
+
+img {
+  width: 40px;
+  padding: 0.2rem;
+}
+.result {
+  font-size: x-large;
+  margin: 1rem;
+  font-weight: bolder;
+}
+
+.que {
+  margin: 3rem;
+  font-family: "Work Sans", sans-serif;
+  font-size: larger;
+}
