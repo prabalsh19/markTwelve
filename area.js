@@ -9,8 +9,20 @@ const calculateArea =(e)=>{
  const firstSideValue = Number(firstSide.value);
   const secondSideValue = Number(secondSide.value);
   const thirdSideValue = Number(thirdSide.value);
+  const emptyValue = firstSideValue ==''||secondSideValue ==''||thirdSideValue=='';
+  const negativeValue = firstSideValue <0||secondSideValue <0||thirdSideValue<0;
 
-  if (
+  if(emptyValue){
+    output.innerText = "Inputs cannot be empty."
+    output.style.color = 'red'
+    return
+  }else if(negativeValue){
+    output.innerText = "Inputs cannot be negative."
+    output.style.color = 'red'
+    return
+  }
+
+  else if (
     firstSideValue + secondSideValue > thirdSideValue &&
     secondSideValue + thirdSideValue > firstSideValue &&
     firstSideValue + thirdSideValue > secondSideValue
@@ -25,8 +37,6 @@ const calculateArea =(e)=>{
         (semiPerimeter - thirdSideValue)
     ).toFixed(4);
     output.innerText = `Area of a triangle using heron's formula is ${result} units`;
-  } else {
-    output.innerText = "Enter valid side lengths such that each side lengths";
   }
 }
 
